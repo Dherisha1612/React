@@ -1,0 +1,11 @@
+{
+    "items":[
+        {
+        "name":"phone",
+        "price":25000,
+        "image":"https://img.freepik.com/premium-photo/smartphone-balancing-with-pink-background_23-2150271746.jpg?size=338&ext=jpg&ga=GA1.1.2113030492.1720396800&semt=sph",
+        "company":"mobileshowroom"
+        }
+    
+    ]
+}
