@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+     <style>
+        .header{
+            height: 100px;
+            /* background-color: rgb(23, 168, 124); */
+            display: flex;
+        }
+
+        .child1{
+            /* background-color:gray; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            
+        }
+        .child2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .navbar{
+            height: 80px;
+            width: 100%;
+        }
+       .button1{
+            background-color: rgb(47, 34, 116);
+            padding: 6px;
+            border-radius:30px;
+            width: 180px;
+        }
+        .button1:hover{
+          background-color:rgb(45, 35, 4) ;
+          
+        }
+        .welcome{
+            height: 25px;
+            margin-top: 70px;
+            background-color: orange;
+            width: 180px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .heading{
+            height: 100px;
+            margin-top: 10px;
+            /* background-color: blue; */
+        }
+        .sentence{
+          margin-top: 20px;
+            height: 100px;
+            /* background-color: blueviolet; */
+        }
+        .button2{
+            margin-top: 50px;
+            height:100px ;
+
+        }
+        .feature{
+            height: 25px;
+            background-color: orange;
+            width: 100px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .text2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+
+        }
+        .text3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+
+        }
+        .market{
+          margin-bottom: 20px;
+          font-size: 23px;
+
+        }
+        .paragraph{
+            margin-top: 20px;
+            background-color: orange;
+            width: 180px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            height: 25px;
+        }
+        .heading1{
+            height: 50px;
+            margin-top: 10px;
+        }
+        .sentence1{
+          margin-top: 10px;
+        }
+        .button3{
+            background-color: rgb(18, 6, 87);
+            padding: 6px;
+            border-radius:30px;
+            width: 180px;
+            margin-top: 30px;
+        }
+        .button3:hover{
+          background-color:rgb(45, 35, 4) ;
+          
+        }
+        .subheading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+        .service{
+            height: 25px;
+            background-color: orange;
+            width: 100px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .box{
+          /* display: flex; */
+          text-align: center;
+          padding: 20px;
+          border: 1px ;
+          margin-bottom: 20px;
+          background-color: rgb(247, 240, 240);
+        }
+        .icon {
+            font-size: 21px;
+            margin-bottom: 20px;
+        }
+        .testimonals{
+            height: 25px;
+            background-color: orange;
+            width: 120px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .box2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 20%;
+            /* background-color: rgb(247, 240, 240) */
+            /* margin-bottom: 30px; */
+            /* border: 2px solid black ; */
+        }
+        .box3{
+            height: 100%;
+            width: 80%;
+            /* background-color: rgb(21, 255, 0); */
+            /* border: 2px solid black; */
+           
+        }
+        .below{
+            background-color: white;
+            /* border: 2px ; */
+        }
+        /* .below2{
+          /* height: 300px; */
+        /* } */ 
+        .cont:hover{
+          border-radius: 10px;
+          border:7px solid black;
+          
+          
+        }
+        .content1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:150px ;
+            margin-top: 20px;
+            padding-left: 10px;
+        }
+        .content2{
+          height:150px ;
+
+        }
+      
+        .fot1{
+            justify-content: center;
+            align-items: center;
+            height:250px ;
+            margin-top: 60px;
+            /* padding-left: 10px; */
+            padding-top: 30px;
+        }
+        .box4{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 30%;
+        }
+        .box5{
+          margin-top: 30px;
+          text-align: center;
+        }
+        .p1{
+          margin-bottom: 120px;
+          padding-bottom: 80px;
+        }
+    
+        @media screen and (max-width:992px){
+      .maxx{
+           margin-top: 20px;
+        }
+      .cont{
+        margin-top: 25px;
+      }
+
+        }
+        /* @media screen and (max) */
+        
+        </style>
+     
+</head>
+<body>
+    <div class="parent">
+        <div class="header row">
+            <div class="child1  col-lg-6 col-md-6 col-sm-6 col-6"><h1><strong>ECHO</strong></h1></div>
+            <div class="child2 col-lg-6 col-md-6 col-sm-6 col-6"> 
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Home</a>
+                              </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown link
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#">About</a>
+                          </li>
+
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#">Services</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#">FAQ</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#">Contact Us</a>
+                          </li>
+                          <li>
+                            <button class="button1" style="color:rgb(23, 222, 236);">Download now</button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>   
+            </div>
+         </div>
+         <nav class="parent container">
+            <div class="nav row">
+                <div class="text1 col-lg-6 col-md-12 col-sm-12 col-12 height:500px">
+                    <div class="welcome"><p>WELCOME TO OUR SITE</p></div>
+                    <div class="heading"><h1>Expert SEO, SEM Services in London</h1></div>
+                    <div class="sentence">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language</div>
+                    <div class="button2">
+                    <a href="#" class="btn btn-primary mr-2">How we work</a>
+                    <a href="#" class="btn btn-outline-primary">Contact us</a>
+                </div>
+                 </div>
+                 <div class="nav2 col-lg-6 col-md-12 col-sm-12 col-12" style="background-color:white;height:500px">
+                    <img style="width:100%;height:100%" src="https://preview.colorlib.com/theme/echo/images/hero_1.png" alt="">
+                </div>
+            </div>
+        </nav>
+            <div class=" parent2 container" style="background-color: white">
+              <div class=" frst row" style="display: flex;justify-content: center;align-items: center;height: 300px;">
+                <div class="text2 col-lg-4 col-md-12 col-sm-12 col-12">
+                  <div class="feature">FEATURES</div>
+                  <h1 style="color: rgb(2, 2, 80);">Our Features</h1>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                </div>
+                </div>
+                <div class="nxt row">
+                  <div class="text3 col-lg-4 col-md-12 col-sm-12 col-12" style="height: 300px;background-color:white">
+                   <div class="market"> <i class="fa-solid fa-rocket fa-2xl"></i></div>
+                    <h4>Marketing Analysis</h4>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                  </div>
+                  <div class="text3 col-lg-4 col-md-12 col-sm-12 col-12" style="height: 300px;background-color: white">
+                    <div class="market"><i class="fa-solid fa-link fa-2xl"></i></div>
+                    <h4>Digital Marketing</h4>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                </div>
+                <div class="text3 col-lg-4 col-md-12 col-sm-12 col-12" style="height: 300px;background-color:white;">
+                  <div class="market"><i class="fa-solid fa-trophy fa-2xl"></i></div>
+                  <h4>SEO and Backlinks</h4>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              </div>
+            </div>
+            </div>
+            <div class="parent1 container">
+              <div class="aside row">
+                <div class="aside1 col-lg-6 col-md-12 col-sm-12 col-12" style="background-color:white;height:500px">
+                  <img style="width:100%;height:100%" src="https://preview.colorlib.com/theme/echo/images/about_1.png" alt="">
+                </div>
+                <div class="aside2 col-lg-6 col-md-12 col-sm-12 col-12">
+                  <div class="paragraph"><p>ABOUT US</p></div>
+                  <div class="heading1"><h1>Why our agency?</h1></div>
+                  <div class="sentence1">
+                  <div>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</div>
+                  <br>
+                  <div>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</div>
+                  <br>
+                  <div>-Behind the word mountains </div>
+                  <div>-Bookmarksgrove right at the coast</div>
+                  <div>-Semantics, a large language</div>
+                </div>
+                <div><button class="button3" style="color: rgb(23, 222, 236);">About Us</button></div>
+
+                </div>
+                </div>
+                </div>
+                
+                <div class=" parent3 container" style="background-color: white">
+                  <div class=" above row" style="display: flex;justify-content: center;align-items: center;height: 250px;">
+                    <div class="subheading col-lg-4 col-md-12 col-sm-12 col-12">
+                      <div class="service">SERVICES</div>
+                      <h1 style="color: rgb(2, 2, 80); "><strong>Our Services</strong></h1>
+                    </div>
+                    </div>
+                    <div class="below row">
+                    <div class="col-lg-6 col-md-12 col-sm-12" style="background-color:white ;display: flex; ">
+                        <div class="parat" style="border: 2px solid lightcyan ;display: flex; background-color: lightcyan;">
+                        <div class="box2">
+                            <i class="fa-solid fa-globe fa-2xl"></i>
+                        </div>
+                        <div class="box3">
+                            <h3>Design Marketing</h3>
+                          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  <div class=" maxx col-lg-6 col-md-12 col-sm-12"style="background-color: white;display: flex;">
+                    <div style="border: 2px solid lightcyan;display: flex; background-color: lightcyan;">
+
+                      <div class="box2">
+                         <i class="fa-solid fa-rocket fa-2xl"></i>
+                          </div>
+                          <div class="box3">
+                          <h3>SEO Marketing</h3>
+                          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                      </div>
+
+                  </div>
+                  </div>
+
+                  </div>
+                  <div class="below row"style="margin-top: 20px;">
+                  <div class="col-lg-6 col-md-12 col-sm-12"style="background-color:white ;display: flex;">
+                    <div style="border: 2px solid lightcyan ;display: flex; background-color:lightcyan;">
+                      <div class="box2">
+                            <i class="fa-solid fa-city fa-2xl"></i>
+                          </div>
+                          <div class="box3">
+                          <h3>Internet Marketing</h3>
+                          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="maxx col-lg-6 col-md-12 col-sm-12"style=" background-color:white;display: flex;">
+                    <div style="border: 2px solid lightcyan ;display: flex; background-color: lightcyan">
+                      <div class="box2">
+                            <i class="fa-solid fa-link fa-2xl"></i>
+                          </div>
+                          <div class="box3">
+                          <h3>BackLinks Marketing</h3>
+                          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                      </div>
+                  </div>
+                </div>
+                </div>
+                <div class="below row" style="margin-top: 20px;">
+                  <div class="col-lg-6 col-md-12 col-sm-12"style="background-color:white;display: flex;">
+                    <div style="border: 2px solid lightcyan ;display: flex; background-color: lightcyan;">
+                        <div class="box2">
+                            <i class="fa-solid fa-volume-high fa-2xl"></i>
+                          </div>
+                          <div class="box3">
+                          <h3>Social Marketing</h3>
+                          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="maxx col-lg-6 col-md-12 col-sm-12"style="background-color:white;display: flex;">
+                    <div style="border: 2px solid lightcyan;display: flex; background-color: lightcyan;">
+
+                      <div class="box2">
+                            <i class="fa-solid fa-trophy fa-2xl"></i>
+                          </div>
+                          <div class="box3">
+                          <h3>Creative Marketing</h3>
+                          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    
+                  </div>
+              </div>
+            </div>
+                  </div>
+                  </div>
+            <div class=" parent4 container" style="background-color:white">
+                <div class=" above1 row" style="display: flex;justify-content: center;align-items: center;height: 400px;">
+                  <div class="subheading col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="testimonals">TESTIMONIALS</div>
+                    <h1 style="color: rgb(2, 2, 80); "><strong>Testimonals</strong></h1>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                  </div>
+                  </div>
+                  <div class="below2 row">
+                    <div class="cont col-lg-4 col-md-12 col-sm-12 col-12" style="background-color:white;">
+                      <div style="border: 2px solid whitesmoke ; background-color:whitesmoke;border-radius: 10px;">
+                     <div class="content1">
+                      <p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.”</p></div>
+                     <div class="content2" style=" display: flex; background-color:whitesmoke;">
+                      <div class="box4">
+                        <i class="fa-solid fa-user fa-2xl" style="font-size:70px;"></i>
+                         </div>
+                         <div class="box5">
+                         <h3><p><strong>Michelle Alisson</strong></p></h3>
+                         <p>Director at Google</p>
+                         </div>
+
+                     </div>
+                      
+                     </div>
+                      </div>
+                      
+                        
+                    <div class="cont col-lg-4 col-md-12 col-sm-12 col-12" style="background-color:white;">
+                      <div style="border: 2px solid whitesmoke ; background-color:whitesmoke;border-radius: 10px;">
+                     <div class="content1">
+                      <p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.”</p></div>
+                      <div class="content2" style=" display: flex; background-color:whitesmoke;">
+                        <div class="box4">
+                          <i class="fa-solid fa-user fa-2xl"style="font-size:70px"></i>
+
+                           </div>
+                           <div class="box5">
+                           <h3><p><strong>Michelle Alisson</strong></p></h3>
+                           <p class="p1">Director at Google</p>
+                           </div>
+
+                      </div>
+                    </div>
+                    </div>
+                    <div class="cont col-lg-4 col-md-12 col-sm-12 col-12" style="background-color:white;">
+                      <div style="border: 2px solid whitesmoke; background-color:whitesmoke;border-radius: 10px;">
+                     <div class="content1">
+                      <p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.”</p></div>
+                      <div class="content2" style=" display: flex; background-color:whitesmoke;">
+                        <div class="box4">
+                          <i class="fa-solid fa-user fa-2xl"style="font-size:70px"></i>
+
+                           </div>
+                           <div class="box5">
+                           <h3><p><strong>Michelle Alisson</strong></p></h3>
+                           <p class="p1">Director at Google</p>
+
+                      </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+            </div>
+     
+    <div class="parent5 container">
+      <div class="foot row">
+        <div class="foot1 col-lg-3 col-md-12 col-sm-12 col-12" style="background-color:white;width: 35%;display: flex;">
+          <div style="background-color:white">
+            <div class="fot1">
+          <h4>About Cololib</h4>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+
+          </p>
+          <i class="fa-brands fa-twitter fa-2xl"></i>
+          <i class="fa-brands fa-instagram fa-2xl"></i>
+          <i class="fa-brands fa-facebook fa-2xl"></i>
+          </div>
+        </div>
+      </div>
+      <div class="foot2 col-lg-3 col-md-12 col-sm-12 col-12" style="background-color:white;width: 15%;display: flex;">
+        <div style="background-color:white">
+          <div class="fot1">
+        <h4>Pages</h4>
+        <p>Blog</p>
+        <p>About</p>
+          <p>Contact</p>
+        </div>
+        </div>
+    </div>
+    <div class="foot3 col-lg-3 col-md-12 col-sm-12 col-12" style="background-color:white;width: 15%;display: flex;">
+      <div style="background-color:white;">
+        <div class="fot1">
+      <h4>Resources</h4>
+      <p>Blog</p>
+      <p>About</p>
+        <p>Contact</p>
+      </div>
+    </div>
+  </div>
+  <div class="foot3 col-lg-3 col-md-12 col-sm-12 col-12" style="background-color:white;width: 35%;;display: flex;">
+    <div class style="background-color:white;">
+      <div class="fot1">
+    <h4>Contact</h4>
+    <p>info@Cololib
+    </p>
+    <p>+1 222 212 3819
+    </p>
+      <p>43 Raymouth Rd. Baltemoer, London 3910</p>
+    </div>
+    </div>
+</div>
+
+      </div>      
+    </div>
+    <div class="parent6 container">
+      <div class=" above row" style="display: flex;justify-content: center;align-items: center;height: 250px;">
+        <div class="subheading col-lg-12 col-md-12 col-sm-12 col-12">
+          <p>Copyright ©2024 All rights reserved | This template is made with <i class="fa-solid fa-heart" style="color: #fa0000;"></i>  by Colorlib</p>
+        </div>
+      </div>
+    </div>
+                  
+    </div>
+            
+      </body>
+</html>
